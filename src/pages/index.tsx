@@ -76,6 +76,14 @@ export default function Home(): ReactElement {
 
   useEffect(() => {
     calculateUtilDay()
+
+    const ads = document.getElementsByClassName('adsbygoogle').length
+
+    for (let i = 0; i < ads; i++) {
+      try {
+        ;(adsbygoogle = window.adsbygoogle || []).push({})
+      } catch (e) {}
+    }
   }, [])
 
   return (
@@ -225,13 +233,13 @@ export default function Home(): ReactElement {
             bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
             borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
           >
-            <AdSense
-              client="ca-pub-3482012731804317"
-              slot="8718184036"
-              style={{ display: 'block' }}
-              format="auto"
-              responsive="true"
-            />
+            <ins
+              className="adsbygoogle"
+              data-ad-client="ca-pub-3482012731804317"
+              data-ad-slot="8718184036"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
           </Box>
         </Container>
       </Box>
@@ -273,13 +281,13 @@ export default function Home(): ReactElement {
                 bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
                 borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
               >
-                <AdSense
-                  client="ca-pub-3482012731804317"
-                  slot="8718184036"
-                  style={{ display: 'block' }}
-                  format="auto"
-                  responsive="true"
-                />
+                <ins
+                  className="adsbygoogle"
+                  data-ad-client="ca-pub-3482012731804317"
+                  data-ad-slot="8718184036"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
+                ></ins>
               </Box>
               <Box as="article" mb="12">
                 <Heading as="h2" fontSize="xl" mb="4">
@@ -301,13 +309,13 @@ export default function Home(): ReactElement {
                 bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
                 borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
               >
-                <AdSense
-                  client="ca-pub-3482012731804317"
-                  slot="8718184036"
-                  style={{ display: 'block' }}
-                  format="auto"
-                  responsive="true"
-                />
+                <ins
+                  className="adsbygoogle"
+                  data-ad-client="ca-pub-3482012731804317"
+                  data-ad-slot="8718184036"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
+                ></ins>
               </Box>
             </Box>
             <Box
@@ -322,13 +330,13 @@ export default function Home(): ReactElement {
               borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
               mb="12"
             >
-              <AdSense
-                client="ca-pub-3482012731804317"
-                slot="8718184036"
-                style={{ display: 'block' }}
-                format="auto"
-                responsive="true"
-              />
+              <ins
+                className="adsbygoogle"
+                data-ad-client="ca-pub-3482012731804317"
+                data-ad-slot="8718184036"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
             </Box>
           </Grid>
         </Container>
