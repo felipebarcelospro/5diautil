@@ -80,7 +80,7 @@ export default function Home(): ReactElement {
     const ads = document.getElementsByClassName('adsbygoogle').length
     for (let i = 0; i < ads; i++) {
       try {
-        ;(adsbygoogle = (window as any).adsbygoogle || []).push({})
+        ;(adsbygoogle = window.adsbygoogle || []).push({})
       } catch (e) {}
     }
   }, [])
