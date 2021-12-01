@@ -213,17 +213,6 @@ export default function Home(): ReactElement {
         </Container>
       </Box>
 
-      <Box as="section">
-        <Container>
-          <AdSense
-            client="ca-pub-3482012731804317"
-            slot="8718184036"
-            style={{ width: '100%', height: 200 }}
-            format=""
-          />
-        </Container>
-      </Box>
-
       <Divider my="24" />
 
       <Box as="section" mb="12">
@@ -250,17 +239,6 @@ export default function Home(): ReactElement {
                   considerado dia útil, a depender do caso.
                 </Text>
               </Box>
-              <Box
-                h={{ base: 24, md: 52 }}
-                d="flex"
-                alignItems="center"
-                justifyContent="center"
-                border="1px dotted"
-                borderRadius="base"
-                mb="12"
-                bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
-                borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-              ></Box>
               <Box as="article" mb="12">
                 <Heading as="h2" fontSize="xl" mb="4">
                   Calculadora de 5º dia útil: Como calcular dias úteis?
@@ -271,29 +249,7 @@ export default function Home(): ReactElement {
                   sábado, domingos e feriados.
                 </Text>
               </Box>
-              <Box
-                h={{ base: 24, md: 52 }}
-                d="flex"
-                alignItems="center"
-                justifyContent="center"
-                border="1px dotted"
-                borderRadius="base"
-                bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
-                borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-              ></Box>
             </Box>
-            <Box
-              d={{ base: 'none', md: 'flex' }}
-              h={72}
-              w="100%"
-              alignItems="center"
-              justifyContent="center"
-              border="1px dotted"
-              borderRadius="base"
-              bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
-              borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-              mb="12"
-            ></Box>
           </Grid>
         </Container>
       </Box>
