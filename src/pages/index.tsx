@@ -78,7 +78,6 @@ export default function Home(): ReactElement {
     calculateUtilDay()
 
     const ads = document.getElementsByClassName('adsbygoogle').length
-
     for (let i = 0; i < ads; i++) {
       try {
         ;(adsbygoogle = window.adsbygoogle || []).push({})
