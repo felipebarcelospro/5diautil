@@ -1,0 +1,8 @@
+.eslintrc.js
+packages/api/.cache
+packages/api/.tmp
+packages/api/build
+packages/api/node_modules
+packages/web/node_modules
+node_modules
+dist
