@@ -54,7 +54,6 @@ export default function Home(): ReactElement {
     const lastDay = new Date(year, month + 1, 0)
     const monthDays: Date[] = []
 
-    // loop all days of month
     for (let i = firstDay.getDate(); i <= lastDay.getDate(); i++) {
       const day = new Date(year, month, i)
       monthDays.push(day)
