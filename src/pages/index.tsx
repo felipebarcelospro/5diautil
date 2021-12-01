@@ -76,13 +76,6 @@ export default function Home(): ReactElement {
 
   useEffect(() => {
     calculateUtilDay()
-
-    const ads = document.getElementsByClassName('adsbygoogle').length
-    for (let i = 0; i < ads; i++) {
-      try {
-        ;(adsbygoogle = window.adsbygoogle || []).push({})
-      } catch (e) {}
-    }
   }, [])
 
   return (
@@ -222,24 +215,12 @@ export default function Home(): ReactElement {
 
       <Box as="section">
         <Container>
-          <Box
-            h={{ base: 24, md: 52 }}
-            d="flex"
-            alignItems="center"
-            justifyContent="center"
-            border="1px dotted"
-            borderRadius="base"
-            bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
-            borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-          >
-            <ins
-              className="adsbygoogle"
-              data-ad-client="ca-pub-3482012731804317"
-              data-ad-slot="8718184036"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            ></ins>
-          </Box>
+          <AdSense
+            client="ca-pub-3482012731804317"
+            slot="8718184036"
+            style={{ width: '100%', height: 200 }}
+            format=""
+          />
         </Container>
       </Box>
 
@@ -279,15 +260,7 @@ export default function Home(): ReactElement {
                 mb="12"
                 bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
                 borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-              >
-                <ins
-                  className="adsbygoogle"
-                  data-ad-client="ca-pub-3482012731804317"
-                  data-ad-slot="8718184036"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
-                ></ins>
-              </Box>
+              ></Box>
               <Box as="article" mb="12">
                 <Heading as="h2" fontSize="xl" mb="4">
                   Calculadora de 5º dia útil: Como calcular dias úteis?
@@ -307,15 +280,7 @@ export default function Home(): ReactElement {
                 borderRadius="base"
                 bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
                 borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
-              >
-                <ins
-                  className="adsbygoogle"
-                  data-ad-client="ca-pub-3482012731804317"
-                  data-ad-slot="8718184036"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
-                ></ins>
-              </Box>
+              ></Box>
             </Box>
             <Box
               d={{ base: 'none', md: 'flex' }}
@@ -328,15 +293,7 @@ export default function Home(): ReactElement {
               bg={useColorModeValue('gray.50', 'whiteAlpha.200')}
               borderColor={useColorModeValue('gray.200', 'whiteAlpha.200')}
               mb="12"
-            >
-              <ins
-                className="adsbygoogle"
-                data-ad-client="ca-pub-3482012731804317"
-                data-ad-slot="8718184036"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              ></ins>
-            </Box>
+            ></Box>
           </Grid>
         </Container>
       </Box>
