@@ -1,4 +1,4 @@
-# 5 dia util
+# 5diautil.com.br
 
 Discover the 5th working day of any month with ease.
 
